@@ -1,0 +1,154 @@
+.youtube{
+	margin-left: 0;
+}
+h2, p{
+  text-shadow: 0 0 5px white;
+}
+h2:hover{
+  color:white;
+}
+p:hover{
+  color:white;
+}
+
+/*Star Wars*/
+body{
+	background-image: url(music_bg3.jpg);
+	background-size: cover;
+}
+
+.localaudio{
+	display: inline-block;
+	align-items: center;
+}
+
+.localaudio p{
+	font-size: 18px;
+	color: black;
+	font-weight: bolder;
+	margin-right: 15px;
+	margin-bottom: 4px;
+	text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
+}
+
+.localaudio p:hover{
+	color: white;
+}
+
+.localaudio h2{
+	margin-bottom:20px;
+	text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
+}
+
+.localaudio h2:hover{
+	color: white;
+}
+
+
+/*Filter Invert : This is to invert an image color, including its shadow if you set it On Hover*/
+#icon{
+	width: 50px;
+	margin-bottom: 5px;
+	cursor: pointer;
+	box-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
+	border-radius: 75px;
+}
+#icon:hover{
+	border-radius: 75px;
+	box-shadow: 2px 2px 10px 2px black;
+	filter: invert(100%);
+}
+
+#icon2{
+	width: 50px;
+	margin-bottom: 5px;
+	cursor: pointer;
+	box-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
+	border-radius: 75px;
+}
+#icon2:hover{
+	border-radius: 75px;
+	box-shadow: 2px 2px 10px 2px black;
+	filter: invert(100%);
+}
+
+#icon3{
+	width: 50px;
+	margin-bottom: 5px;
+	cursor: pointer;
+	box-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
+	border-radius: 75px;
+}
+#icon3:hover{
+	border-radius: 75px;
+	box-shadow: 2px 2px 10px 2px black;
+	filter: invert(100%);
+}
+
+#icon4{
+	width: 50px;
+	margin-bottom: 5px;
+	cursor: pointer;
+	box-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
+	border-radius: 75px;
+}
+#icon4:hover{
+	border-radius: 75px;
+	box-shadow: 2px 2px 10px 2px black;
+	filter: invert(100%);
+}
+
+#icon5{
+	width: 50px;
+	margin-bottom: 5px;
+	cursor: pointer;
+	box-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
+	border-radius: 75px;
+}
+#icon5:hover{
+	border-radius: 75px;
+	box-shadow: 2px 2px 10px 2px black;
+	filter: invert(100%);
+}
+
+#gif1{
+	height: 50px;
+	width: 200px;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	box-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
+	opacity: 0.7;
+}
+#gif2{
+	height: 50px;
+	width: 200px;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	box-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
+	opacity: 0.7;
+}
+#gif3{
+	height: 50px;
+	width: 200px;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	box-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
+	opacity: 0.7;
+}
+#gif4{
+	height: 50px;
+	width: 200px;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	box-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
+	opacity: 0.7;
+}
+
+#gif5{
+	height: 50px;
+	width: 200px;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	box-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
+	opacity: 0.7;
+}

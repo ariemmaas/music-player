@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Music Player 1.3</title>
+	<link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div style="width:100%; height:100%; margin-left:150px;">
+        <div class="youtube" style="margin-top:50px">
+				<h2>YouTube Videos</h2>
+				<iframe width="300" height="170" src="https://www.youtube.com/embed/1tQhw_scrxE?si=qn4-J2CMlWlpXSBw&amp;start=70" 
+						title="YouTube video player" frameborder="0" 
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+						allowfullscreen></iframe>
+				<p>Dan Vasc : <br>Love Me Tender</p>
+
+				<iframe width="300" height="170" src="https://www.youtube.com/embed/x83tRVzfuHg?si=GEO2xQM9gYviVaLR" 
+						title="YouTube video player" frameborder="0" 
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+						allowfullscreen></iframe>
+				<p>Dan Vasc : <br>Stairway To Heaven</p>
+			</div>
+
+			<div class="youtube" style="margin-left: 320px; margin-top:-483px">
+				<iframe width="300" height="170" src="https://www.youtube.com/embed/8ZkFeS9milM?si=LOVKcgEUbvlrnxmj"
+						title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						allowfullscreen></iframe>
+				<p>Dan Vasc : <br>Nessun Dorma</p>
+
+				<iframe width="300" height="170" src="https://www.youtube.com/embed/7Yr6H1d5mps?si=LHKNL6_8vkLdQF9-" 
+						title="YouTube video player" frameborder="0" 
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+						allowfullscreen></iframe>
+				<p>Dan Vasc : <br>Time To Say Goodbye</p>
+			</div>
+</div>
+
+<div style="margin-left: 150px; margin-top: 30px">
+		<div class="localaudio">
+			<div>
+			<h2>Local Audios</h2>
+			</div>
+			<div class="starwars">
+				<div>
+				<p>Star Wars : Return of the Jedi</p>
+				<img src="media/playbtn2.png" id="icon">
+				<img src="media/soundwave.png" id="gif1">
+				</div>
+				<div>
+				<p>Star Wars : Imperial March</p>
+				<img src="media/playbtn2.png" id="icon2">
+				<img src="media/soundwave.png" id="gif2">
+				</div>
+			</div>
+			
+			<div class="starwars" style="margin-left: 300px; margin-top: -205px;">
+				<div>
+				<p>Star Wars : Death Star Run</p>
+				<img src="media/playbtn2.png" id="icon3">
+				<img src="media/soundwave.png" id="gif3">
+				</div>
+				<div>
+				<p>Star Wars : The Emperor</p>
+				<img src="media/playbtn2.png" id="icon4">
+				<img src="media/soundwave.png" id="gif4">
+				</div>
+			</div>
+
+			<div style="margin-left: 160px;">
+				<p>Star Wars : Trench Run</p>
+				<img src="media/playbtn2.png" id="icon5">
+				<img src="media/soundwave.png" id="gif5">
+			</div>
+		</div>
+	</div>
+	
+	<audio id="music1">
+		<source src="media/battle1.mp3" type="audio/mp3">
+	</audio>
+	<audio id="music2">
+		<source src="media/battle2.mp3" type="audio/mp3">
+	</audio>
+	<audio id="music3">
+		<source src="media/battle3.mp3" type="audio/mp3">
+	</audio>
+	<audio id="music4">
+		<source src="media/battle4.mp3" type="audio/mp3">
+	</audio>
+	<audio id="music5">
+		<source src="media/SW7.mp3" type="audio/mp3">
+	</audio>
+
+	<script>
+		var music1 = document.getElementById("music1");
+		var music2 = document.getElementById("music2");
+		var music3 = document.getElementById("music3");
+		var music4 = document.getElementById("music4");
+		var music5 = document.getElementById("music5");
+
+		var icon = document.getElementById("icon");
+		var icon2 = document.getElementById("icon2");
+		var icon3 = document.getElementById("icon3");
+		var icon4 = document.getElementById("icon4");
+		var icon5 = document.getElementById("icon5");
+		var gif1 = document.getElementById("gif1");
+		var gif2 = document.getElementById("gif2");
+		var gif3 = document.getElementById("gif3");
+		var gif4 = document.getElementById("gif4");
+		var gif5 = document.getElementById("gif5");
+
+		icon.onclick = function () {
+			if (music1.paused) {
+				music1.play();
+				icon.src = "https://assets.onecompiler.app/42wwm9vx4/42xqbf94h/pausebtn.png";
+				gif1.src = "https://assets.onecompiler.app/42wwm9vx4/42xqbf94h/soundwave.gif";
+			} else {
+				music1.pause();
+				icon.src = "https://assets.onecompiler.app/42wwm9vx4/42xqbf94h/playbtn2.png";
+				gif1.src = "https://assets.onecompiler.app/42wwm9vx4/42xqbf94h/soundwave.png";
+			}
+		}
+
+		icon2.onclick = function () {
+			if (music2.paused) {
+				music2.play();
+				icon2.src = "https://assets.onecompiler.app/42wwm9vx4/42xqbf94h/pausebtn.png";
+				gif2.src = "https://assets.onecompiler.app/42wwm9vx4/42xqbf94h/soundwave.gif";
+			} else {
+				music2.pause();
+				icon2.src = "https://assets.onecompiler.app/42wwm9vx4/42xqbf94h/playbtn2.png";
+				gif2.src = "https://assets.onecompiler.app/42wwm9vx4/42xqbf94h/soundwave.png";
+			}
+		}
+
+		icon3.onclick = function () {
+			if (music3.paused) {
+				music3.play();
+				icon3.src = "https://assets.onecompiler.app/42wwm9vx4/42xqbf94h/pausebtn.png";
+				gif3.src = "https://assets.onecompiler.app/42wwm9vx4/42xqbf94h/soundwave.gif";
+			} else {
+				music3.pause();
+				icon3.src = "https://assets.onecompiler.app/42wwm9vx4/42xqbf94h/playbtn2.png";
+				gif3.src = "https://assets.onecompiler.app/42wwm9vx4/42xqbf94h/soundwave.png";
+			}
+		}
+
+		icon4.onclick = function () {
+			if (music4.paused) {
+				music4.play();
+				icon4.src = "https://assets.onecompiler.app/42wwm9vx4/42xqbf94h/pausebtn.png";
+				gif4.src = "https://assets.onecompiler.app/42wwm9vx4/42xqbf94h/soundwave.gif";
+			} else {
+				music4.pause();
+				icon4.src = "https://assets.onecompiler.app/42wwm9vx4/42xqbf94h/playbtn2.png";
+				gif4.src = "https://assets.onecompiler.app/42wwm9vx4/42xqbf94h/soundwave.png";
+			}
+		}
+
+		icon5.onclick = function () {
+			if (music5.paused) {
+				music5.play();
+				icon5.src = "https://assets.onecompiler.app/42wwm9vx4/42xqbf94h/pausebtn.png";
+				gif5.src = "https://assets.onecompiler.app/42wwm9vx4/42xqbf94h/soundwave.gif";
+			} else {
+				music5.pause();
+				icon5.src = "https://assets.onecompiler.app/42wwm9vx4/42xqbf94h/playbtn2.png";
+				gif5.src = "https://assets.onecompiler.app/42wwm9vx4/42xqbf94h/soundwave.png";
+			}
+		}
+	</script>
+</body>
+</html>
